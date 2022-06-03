@@ -9,7 +9,7 @@ function NavBar() {
         <div>
           <div>
             {' '}
-            <Link to="/Books">Books</Link>
+            <Link to="/books">Books</Link>
           </div>
           <div>
             {' '}
