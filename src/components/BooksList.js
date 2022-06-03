@@ -3,7 +3,7 @@ import Book from './Book';
 
 const BookList = () => (
   <>
-    <Book />
+    <Book title="The Hunger Games" author="Suzanne Collins" />
   </>
 );
 

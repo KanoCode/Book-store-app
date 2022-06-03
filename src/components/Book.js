@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Book = () => (
-  //   const { title, author } = props;
-  <>
-    <h2>The Hunger Games</h2>
-    <h3>Suzanne Collins</h3>
-    <button type="button">Remove</button>
-  </>
-);
+const Book = (props) => {
+  const { title, author } = props;
+  return (
+    <>
+      <h2>{title}</h2>
+      <h3>{author}</h3>
+      <button type="button">Remove</button>
+    </>
+  );
+};
+
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
 export default Book;
