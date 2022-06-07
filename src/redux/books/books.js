@@ -19,7 +19,7 @@ export default function reducer(state = [], action) {
 // Action Creators
 export function addBook(id, title, author) {
   return {
-    type: 'ADD_BOOK',
+    type: ADD_BOOK,
     book: {
       id, title, author,
     },
@@ -27,5 +27,5 @@ export function addBook(id, title, author) {
 }
 
 export function removeBook(book) {
-  return { type: 'REMOVE_BOOK', book };
+  return { type: REMOVE_BOOK, book };
 }
