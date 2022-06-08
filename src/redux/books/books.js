@@ -5,7 +5,15 @@ const ADD_BOOK = 'bookstore/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/REMOVE_BOOK';
 
 // Reducer
-export default function reducer(state = [{ id: 1, author: 'Kano', title: 'bakugan' }], action) {
+export default function reducer(
+  state = [
+    { id: 1, author: 'Kano', title: 'bakugan' },
+    { id: 1, author: 'Napoleon Hill', title: 'Think and Grow Rich' },
+    { id: 1, author: 'Suzanne Collins', title: 'The Hunger Games' },
+    { id: 3, author: 'Naruto', title: 'Shipudden' },
+  ],
+  action,
+) {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.book];
@@ -21,7 +29,9 @@ export function addBook(id, title, author) {
   return {
     type: ADD_BOOK,
     book: {
-      id, title, author,
+      id,
+      title,
+      author,
     },
   };
 }
