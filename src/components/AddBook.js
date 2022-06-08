@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
+  // local state
   const [Title, setTitle] = useState('');
   const [Author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
+  // handle changes in local state
   const onChangeTitle = (e) => {
     setTitle(e.target.value);
   };
@@ -18,8 +19,8 @@ const AddBook = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(Title, Author);
     dispatch(addBook(uuidv4(), Title, Author));
+    // reset local state
     setTitle('');
     setAuthor('');
   };

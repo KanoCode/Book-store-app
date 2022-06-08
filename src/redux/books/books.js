@@ -1,5 +1,3 @@
-// widgets.js
-
 // Actions
 const ADD_BOOK = 'bookstore/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/REMOVE_BOOK';
