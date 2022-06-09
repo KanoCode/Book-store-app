@@ -3,7 +3,10 @@ import React from 'react';
 import Book from './Book';
 
 const BookList = () => {
-  const books = useSelector((state) => state.booksReducer);
-  return (books.map((a) => (<Book key={2} id={a.id} author={a.title} title={a.author} />)));
+  const books = useSelector((state) => state.booksReducer.books);
+
+  return books.map((a) => (
+    <Book key={1} id={a.id} author={a.author} title={a.title} />
+  ));
 };
 export default BookList;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { postBook } from '../redux/books/books';
 
 const AddBook = () => {
   // local state
@@ -19,7 +19,8 @@ const AddBook = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    dispatch(addBook(uuidv4(), Title, Author));
+    const newBook = { id: uuidv4(), title: Title, author: Author };
+    dispatch(postBook(newBook));
     // reset local state
     setTitle('');
     setAuthor('');
