@@ -73,6 +73,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### :handshake: Contributing
 
+> thanks to  [Zeplin](https://zeplin.io/) for the design of the bookstore app
 Contributions, issues, and feature requests are welcome!
 
 > Feel free to check the issues page.
