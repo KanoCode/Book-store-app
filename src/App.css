@@ -1,3 +1,4 @@
+/* Navbar */
 nav {
   background-color: #fff;
   min-height: 6vh;
@@ -6,23 +7,26 @@ nav {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-nav h1{
+
+nav h1 {
   margin-left: 2%;
-  color: #0290FF;
+  color: #0290ff;
 }
-nav > div{
+
+nav > div {
   display: flex;
   justify-content: space-between;
-  border: solid ;
+  border: solid;
   width: 20%;
   margin-left: 3%;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
-span{
+
+span {
   border: solid grey;
   display: block;
   position: absolute;
@@ -35,4 +39,127 @@ span{
   border-radius: 50%;
   width: 60px;
   height: 60px;
+}
+
+/* main section */
+button {
+  cursor: pointer;
+  color: #0290ff;
+  font-size: 18px;
+  border: none;
+  background-color: #fff;
+  border-right: 1px solid grey;
+  padding: 6px 15px;
+}
+
+form {
+  display: grid;
+  width: 94%;
+  padding: 2%;
+  gap: 2%;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h2 {
+  grid-column: 1/13;
+}
+
+input,
+form > button {
+  height: 30px;
+  padding: 1%;
+  width: 100%;
+}
+
+.title {
+  grid-column: 1/7;
+}
+
+.author {
+  grid-column: 7 / span 4;
+}
+
+form > button {
+  grid-column: 11 / span 2;
+  width: 80%;
+  height: 80%;
+  color: white;
+  background-color: #0290ff;
+}
+
+input {
+  border: solid #d4d4d4;
+  padding: 1%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  padding: 2%;
+  margin: 4% auto;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mid-book-content {
+  margin: 4%;
+  border-right: solid 1px #8c8c8c;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.25);
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.value-container {
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+}
+
+.circular-progress {
+  background: conic-gradient(#4d5bf9, 90deg, #cadcff 36.6deg);
+}
+
+.book-content-right > button {
+  color: white;
+  background-color: #0290ff;
+}
+
+hr {
+  margin: 2%;
 }

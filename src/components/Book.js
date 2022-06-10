@@ -10,17 +10,38 @@ const Book = (props) => {
     dispatch(deleteBook(id));
   };
   return (
-    <>
-      <h2>{title}</h2>
-      <h3>
-        {author}
-        {' '}
-
-      </h3>
-      <button onClick={DeleteBook} type="button">
-        Remove
-      </button>
-    </>
+    <div className="card">
+      {' '}
+      <div className="book-content-left">
+        <h2>{title}</h2>
+        <p>
+          {author}
+          {' '}
+        </p>
+        <button type="button">Comments</button>
+        <button onClick={DeleteBook} type="button">
+          Remove
+        </button>
+        <button type="button">Edit</button>
+      </div>
+      <div className="mid-book-content">
+        <div className="container">
+          <div className="circular-progress">
+            <div className="value-container">8%</div>
+          </div>
+          {' '}
+        </div>
+        <div>
+          <p>8%</p>
+          <p>completed</p>
+        </div>
+      </div>
+      <div className="book-content-right">
+        <p>CURRENT CHAPTER</p>
+        <p>Chapter 2: &quot;A Lesson Learned &quot;</p>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
+    </div>
   );
 };
 
