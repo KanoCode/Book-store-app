@@ -16,7 +16,6 @@ nav h1 {
 nav > div {
   display: flex;
   justify-content: space-between;
-  border: solid;
   width: 20%;
   margin-left: 3%;
 }
@@ -26,8 +25,13 @@ a {
   color: black;
 }
 
+nav > div > div:nth-child(2) a {
+  color: #d3d3d3;
+  margin-left: 12%;
+}
+
 span {
-  border: solid grey;
+  border: solid 1px #ede9e9;
   display: flex;
   position: absolute;
   right: 4%;
@@ -44,7 +48,7 @@ span {
 button {
   cursor: pointer;
   color: #0290ff;
-  font-size: 18px;
+  font-size: 14px;
   border: none;
   background-color: #fff;
   border-right: 1px solid grey;
@@ -82,14 +86,14 @@ form > button {
 form > button {
   grid-column: 11 / span 2;
   width: 80%;
-  height: 80%;
+  height: 100%;
   color: white;
   background-color: #0290ff;
 }
 
 input {
   border: solid #d4d4d4;
-  padding: 1%;
+  padding: 0%;
 }
 
 input:focus {
@@ -98,18 +102,29 @@ input:focus {
 
 .card {
   display: flex;
-  justify-content: space-between;
-  width: 94%;
+  justify-content: space-around;
+  width: 90%;
   padding: 2%;
+  border: solid 1px #d2d2d2;
   margin: 4% auto;
   border-radius: 5px;
   background-color: #fff;
 }
 
+.book-content-left h2,
+.book-content-left p {
+  padding-left: 4%;
+}
+
+.card button {
+  margin-top: 6%;
+}
+
 .mid-book-content {
-  margin: 4%;
-  border-right: solid 1px #8c8c8c;
-  width: 30%;
+  margin: 0 4%;
+  border-right: solid 1px #e8e8e8;
+  width: 33%;
+  padding-right: 6%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -120,7 +135,6 @@ input:focus {
   width: 100px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 5px 10px 25px rgba(60, 60, 150, 0.25);
   display: grid;
   place-items: center;
 }
@@ -129,7 +143,7 @@ input:focus {
   position: relative;
   height: 100px;
   width: 100px;
-  background: conic-gradient(#4d5bf9, 90deg, #cadcff 36.6deg);
+  background: conic-gradient(#0290ff, 90deg, #fafafa 36.6deg);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -147,7 +161,21 @@ input:focus {
 .value-container {
   position: relative;
   font-family: "Courier New", Courier, monospace;
-  font-size: 50px;
+  color: #fff;
+}
+
+.mid-content-p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.mid-content-p > p:nth-child(2) {
+  color: #d3d3d3;
+}
+
+.book-content-left {
+  padding: 1%;
+  text-align: left;
 }
 
 .book-content-right > button {
@@ -155,6 +183,27 @@ input:focus {
   background-color: #0290ff;
 }
 
+.book-content-right > p:nth-child(1) {
+  color: #d3d3d3;
+}
+
 hr {
   margin: 2%;
+}
+
+.book-content-right {
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+}
+
+.book-content-right button {
+  height: 22%;
+}
+
+.container-1 {
+  width: 71%;
+  display: flex;
 }

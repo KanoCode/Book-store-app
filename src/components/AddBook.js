@@ -49,7 +49,7 @@ const AddBook = () => {
           placeholder="Author"
         />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit">Add Book</button>
     </form>
   );
 };

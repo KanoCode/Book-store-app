@@ -24,22 +24,24 @@ const Book = (props) => {
         </button>
         <button type="button">Edit</button>
       </div>
-      <div className="mid-book-content">
-        <div className="container">
-          <div className="circular-progress">
-            <div className="value-container">8%</div>
+      <div className="container-1">
+        <div className="mid-book-content">
+          <div className="container">
+            <div className="circular-progress">
+              <div className="value-container">8%</div>
+            </div>
+            {' '}
           </div>
-          {' '}
+          <div className="mid-content-p">
+            <p>8%</p>
+            <p>completed</p>
+          </div>
         </div>
-        <div>
-          <p>8%</p>
-          <p>completed</p>
+        <div className="book-content-right">
+          <p>CURRENT CHAPTER</p>
+          <p>Chapter 2: &quot;A Lesson Learned &quot;</p>
+          <button type="button">UPDATE PROGRESS</button>
         </div>
-      </div>
-      <div className="book-content-right">
-        <p>CURRENT CHAPTER</p>
-        <p>Chapter 2: &quot;A Lesson Learned &quot;</p>
-        <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );

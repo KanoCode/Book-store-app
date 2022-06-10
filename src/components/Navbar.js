@@ -10,14 +10,14 @@ function NavBar() {
           Book Store CMS
           <span><ImUser /></span>
         </h1>
-        <div>
+        <div className="links">
           <div>
             {' '}
-            <Link to="/books">Books</Link>
+            <Link to="/books">BOOKS</Link>
           </div>
           <div>
             {' '}
-            <Link to="/categories">Categories</Link>
+            <Link to="/categories">CATEGORIES</Link>
           </div>
         </div>
       </nav>
