@@ -19,8 +19,10 @@ const AddBook = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const newBook = { id: uuidv4(), title: Title, author: Author };
-    dispatch(postBook(newBook));
+    if (Title !== '' && Author !== '') {
+      const newBook = { id: uuidv4(), title: Title, author: Author };
+      dispatch(postBook(newBook));
+    }
     // reset local state
     setTitle('');
     setAuthor('');
@@ -29,27 +31,25 @@ const AddBook = () => {
   return (
     <form onSubmit={onSubmit}>
       <h2>ADD NEW BOOK</h2>
-      <label htmlFor="title">
-        Title:
+      <label className="title" htmlFor="title">
         <input
           id="title"
           onChange={onChangeTitle}
           value={Title}
           type="text"
-          className="title"
+          placeholder="Book title"
         />
       </label>
-      <label htmlFor="author">
-        Author:
+      <label className="author" htmlFor="author">
         <input
           id="author"
           onChange={onChangeAuthor}
           value={Author}
           type="text"
-          className="author"
+          placeholder="Author"
         />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit">Add Book</button>
     </form>
   );
 };

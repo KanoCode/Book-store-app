@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 
 function NavBar() {
   return (
     <>
       <nav>
-        <h1>Book Store CMS</h1>
-        <div>
+        <h1>
+          Book Store CMS
+          <span><ImUser /></span>
+        </h1>
+        <div className="links">
           <div>
             {' '}
-            <Link to="/books">Books</Link>
+            <Link to="/books">BOOKS</Link>
           </div>
           <div>
             {' '}
-            <Link to="/categories">Categories</Link>
+            <Link to="/categories">CATEGORIES</Link>
           </div>
         </div>
       </nav>
