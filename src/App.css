@@ -28,12 +28,11 @@ a {
 
 span {
   border: solid grey;
-  display: block;
+  display: flex;
   position: absolute;
   right: 4%;
   top: 4%;
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -121,7 +120,7 @@ input:focus {
   width: 100px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.25);
+  box-shadow: 5px 10px 25px rgba(60, 60, 150, 0.25);
   display: grid;
   place-items: center;
 }
@@ -130,7 +129,7 @@ input:focus {
   position: relative;
   height: 100px;
   width: 100px;
-  background-color: orange;
+  background: conic-gradient(#4d5bf9, 90deg, #cadcff 36.6deg);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -149,10 +148,6 @@ input:focus {
   position: relative;
   font-family: "Courier New", Courier, monospace;
   font-size: 50px;
-}
-
-.circular-progress {
-  background: conic-gradient(#4d5bf9, 90deg, #cadcff 36.6deg);
 }
 
 .book-content-right > button {
