@@ -49,6 +49,17 @@ const AddBook = () => {
           className="author"
         />
       </label>
+      <label htmlFor="category">
+        Category :
+
+        <select name="category" id="category">
+          <option value="Fiction">Fiction</option>
+          <option value="Action">Action</option>
+          <option value="Romance">Romance</option>
+          <option value="Detective">Detective</option>
+          <option value="Suspense">Suspense</option>
+        </select>
+      </label>
       <button type="submit">Submit</button>
     </form>
   );
