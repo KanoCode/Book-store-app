@@ -12,7 +12,11 @@ const Book = (props) => {
   return (
     <>
       <h2>{title}</h2>
-      <h3>{author}</h3>
+      <h3>
+        {author}
+        {' '}
+
+      </h3>
       <button onClick={DeleteBook} type="button">
         Remove
       </button>

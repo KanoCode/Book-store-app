@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 
 function NavBar() {
   return (
     <>
       <nav>
-        <h1>Book Store CMS</h1>
+        <h1>
+          Book Store CMS
+          <span><ImUser /></span>
+        </h1>
         <div>
           <div>
             {' '}
