@@ -8,7 +8,7 @@
 - [Table of contents](#table-of-contents)
 - [Overview](#overview)
   - [Built with](#built-with)
-  - [Live demo( Will be available soon :blush: )](#live-demo-if-available--)
+  - [Live demo(:blush:)](#live-demo)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
