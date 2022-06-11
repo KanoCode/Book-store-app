@@ -35,7 +35,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live demo
 - ### Heroku
-  - [see it here](https://book-store-appl.herokuapp.com/)
+  - [see it live here](https://book-store-appl.herokuapp.com/)
+- ### Netlify
+  - [See it live here](https://62a4539385fbfe77121b12f9--book-store-appl.netlify.app/)
 
 ## Getting Started
 
