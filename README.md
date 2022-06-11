@@ -34,6 +34,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Create-react-app
 
 ## Live demo
+- ### Heroku
+  - [see it here](https://book-store-appl.herokuapp.com/)
 
 ## Getting Started
 
